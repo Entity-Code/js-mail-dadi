@@ -8,13 +8,13 @@
    </head>
    <body>
 
-      <form id="form" action="index.html" method="post">
+      <form id="form" class="dBlock" action="index.html" method="post">
          <!-- input -->
          <div id="container-in">
             <h1>Inserisci qui la tua email per verificare se sei nella lista :)</h1>
             <p><i class="fas fa-arrow-down"></i></p>
             <!-- INPUT -->
-            <input type="text" placeholder="Email">
+            <input id="emailUtente" type="text" placeholder="Email">
          </div>
          <!-- input -->
          <!-- button  CLICK EVENT -->
@@ -26,8 +26,11 @@
             Invia
          </a>
          <!-- button -->
-
       </form>
+
+      <div id="msgContainer" class="dNone">
+         <h1 id="msgRisultato">Sei tra gli invitati, benvenuto !</h1>
+      </div>
 
 
 
