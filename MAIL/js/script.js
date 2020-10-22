@@ -24,7 +24,7 @@ invia.addEventListener("click",
       // OUTPUT
       if (check > 0) {
          document.getElementById("msgRisultato").innerHTML = ("Sei tra gli invitati, benvenuto !");
-      } else{
+      } else{ 
          document.getElementById("msgRisultato").innerHTML = ("Mi dispiace, ma non sei stato invitato");
       }
 
