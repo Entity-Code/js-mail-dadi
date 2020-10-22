@@ -4,43 +4,29 @@
 var listaInvitati = ["topolino@libero.it", "paperino@alice.it", "pippo@gmail.com", "mattia@libero.it"];
 var form = document.getElementById("form");
 
+var invia = document.getElementById("invia");
 invia.addEventListener("click",
 	function() {
       // DICHIARAZIONE VARIABILI INTERNE (INPUT)
       var emailUtente = document.getElementById("emailUtente");
       var msgContainer = document.getElementById("msgContainer");
-      var invia = document.getElementById("invia");
-      var check = false;
+      var msgRisultato = document.getElementById("msgRisultato");
+      var check = 0;
 
       // CHECK EMAIL
-      for (var i = 0; i < listaInvitati.length; i++) {
+      for (i = 0; i < listaInvitati.length; i++) {
          listaInvitati[i];
-
-         if (emailUtente === listaInvitati[i]) {
-            check = true;
+         if (emailUtente.value === listaInvitati[i]) {
+         check++;
          }
       }
 
-      if (check === true) {
-         console.log("ammesso");
-      } else {
-         console.log("respinto");
-      }
-
-
-
-
-
-
-
-
-
       // OUTPUT
-
-
-
-
-
+      if (check > 0) {
+         document.getElementById("msgRisultato").innerHTML = ("Sei tra gli invitati, benvenuto !");
+      } else{
+         document.getElementById("msgRisultato").innerHTML = ("Mi dispiace, ma non sei stato invitato");
+      }
 
       //DISPLAY FORM OFF
       form.className = "dNone";
