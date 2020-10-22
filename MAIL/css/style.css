@@ -1,0 +1,164 @@
+/* MAIL */
+/* regole generali */
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: monospace;
+   margin: 0 auto;
+}
+
+body{
+   background-color: black;
+}
+
+
+#form{
+   text-align: center;
+   padding: 150px;
+}
+#form h1, i{
+   display: inline-block;
+   color: #0000db;
+   text-shadow: 0px 0px 4px white,
+   0px -5px 4px #2196f3,
+   2px -10px 6px #2196f3,
+   -2px -15px 11px #2196f3,
+   2px -25px 18px #2196f3;
+   font-size: 25px;
+   padding: 30px;
+}
+
+i{
+   margin-bottom : 15px;
+}
+
+/* input */
+label {
+   display:block;
+   margin:20px auto;
+   width:420px;
+   overflow:auto;
+   font-family:sans-serif;
+   font-size:20px;
+   color:#444;
+   text-shadow:0 0 2px #ddd;
+   padding:20px 10px 10px 0;
+}
+
+input {
+   width:200px;
+   border:2px solid #dadada;
+   border-radius:7px;
+   font-size:20px;
+   padding:5px;
+   margin-top:-10px;
+   text-align: center;
+   margin-bottom: 50px;
+   transition: all 400ms;
+}
+
+input:focus {
+   outline:none;
+   border-color:#9ecaed;
+   box-shadow:0 0 50px #9ecaed;
+}
+
+.glowing-border {
+   border: 2px solid #dadada;
+   border-radius: 7px;
+}
+
+.glowing-border:focus {
+   outline: none;
+   border-color: #9ecaed;
+   box-shadow: 0 0 10px #9ecaed;
+}
+/* input */
+
+
+/* button */
+#invia{
+   position: relative;
+   display: inline-block;
+   padding: 15px 50px;
+   color: #2196f3;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   text-decoration: none;
+   font-size: 24px;
+   overflow: hidden;
+   transition: 0.2s;
+   margin-top: 20px;
+}
+
+#invia:hover{
+   color: #255784;
+   background: #2196f3;
+   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+   transition-delay: 0.5s;
+}
+
+#invia span{
+   position: absolute;
+   display: block;
+}
+#invia span:nth-child(1){
+   top:0;
+   left: -100%;
+   width: 100%;
+   height: 2px;
+   background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+#invia:hover span:nth-child(1){
+   left: 100%;
+   transition: 0.5s;
+}
+
+
+#invia span:nth-child(3){
+   bottom: 0;
+   right: -100%;
+   width: 100%;
+   height: 2px;
+   background: linear-gradient(270deg,transparent, #2196f3);
+}
+
+#invia:hover span:nth-child(3){
+   right: 100%;
+   transition: 0.5s;
+   transition-delay: 0.25s;
+}
+
+
+#invia span:nth-child(2){
+   top: -100%;
+   right: 0;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(180deg,transparent, #2196f3);
+}
+
+#invia:hover span:nth-child(2){
+   top: 100%;
+   transition: 0.5s;
+   transition-delay: 0.13s;
+}
+
+
+
+#invia span:nth-child(4){
+   bottom: -100%;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(360deg,transparent, #2196f3);
+}
+
+#invia:hover span:nth-child(4){
+   bottom: 100%;
+   transition: 0.5s;
+   transition-delay: 0.35s;
+}
+/* button */
